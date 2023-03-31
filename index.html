@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Testcase</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.143.0/build/three.module.min.js",
+            "three/": "https://cdn.jsdelivr.net/npm/three@0.143.0/"
+        }
+    }
+    </script>
+
+    <script>
+        import("./main.js").then((myobj) => {
+            myobj.init()
+        });
+    </script>
+    <div class="thestuff">
+        <div class="stuff" id="stuffView"></div>
+    </div>
+</body>
+
+</html>
